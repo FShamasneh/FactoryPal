@@ -37,7 +37,7 @@ The following figure shows the configuration of the processor in NiFi (both are 
 
 ### TransformInfluxDBResponseToJSON
 
-A jython script was written in this processor to transfer the output of the previous stage into JSON format. The jython script could be found under `(NiFiProcessors/InfluxToJsonTransformer.py)`.
+A jython script was written in this processor to transfer the output of the previous stage into JSON format. The jython script could be found under `(NiFi/NiFiProcessors/InfluxToJsonTransformer.py)`.
 The output of this processor is: `{"product": {"0": [[1624378574.0, 0.0], [1624383671.0, 15.685808348048699]], "1": [[1624378577.0, 7.1646233636807], [1624383524.0, 13.122035182560696]]}}`. The configuration on this processor is shown bellow: 
 
 ![alt text](https://github.com/FShamasneh/FactoryPal/blob/main/images/6.png)
@@ -52,7 +52,7 @@ The following figure shows the configuration for `MergeProductsMetricsStreams` p
 
 ### ProcessStream-GenerateReport
 
-This processor is the most interesting one. It integrates a python script that runs locally on the machine. This python script could be found under `(NiFiProcessors/analyzer.py)`. To find the correlation between the production output and the 20 metrics we have. A *standardization* has been applied on all the features to ensure that they are running on the same scale. The cross-correlation was used to find the correlation score between the production output for each product and the other metrics. An additional statistical summary report was generated based on the data. A sample output of this processor could be found under `(NiFi/SampleOfGeneratedReport/products_metrics-2021_12_18_21_17_19_184.txt)`.
+This processor is the most interesting one. It integrates a python script that runs locally on the machine. This python script could be found under `(NiFi/NiFiProcessors/analyzer.py)`. To find the correlation between the production output and the 20 metrics we have. A *standardization* has been applied on all the features to ensure that they are running on the same scale. The cross-correlation was used to find the correlation score between the production output for each product and the other metrics. An additional statistical summary report was generated based on the data. A sample output of this processor could be found under `(NiFi/SampleOfGeneratedReport/products_metrics-2021_12_18_21_17_19_184.txt)`.
 The configuration of this processor is shown bellow: 
 ![alt text](https://github.com/FShamasneh/FactoryPal/blob/main/images/8.png)
 
