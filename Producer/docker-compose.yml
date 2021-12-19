@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  metrics:
+    environment:
+      - API_URL
+      - KAFKA_BROKERS
+      - KAFKA_TOPIC
+      - SLEEP
+    build: .
+    network_mode: "host"

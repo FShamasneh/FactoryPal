@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  workorder:
+    environment:
+      - KAFKA_BROKERS
+      - KAFKA_TOPIC
+      - STREAM_TYPE
+      - DATABASE_NAME
+      - INFLUX_IP
+      - INFLUX_PORT
+      - INFLUX_BATCH_SIZE
+    build: .
+    network_mode: "host"
