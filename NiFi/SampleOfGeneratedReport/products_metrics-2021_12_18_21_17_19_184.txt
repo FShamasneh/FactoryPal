@@ -1,0 +1,86 @@
+Product ID: 0 
+The top 3 correlated metrics are:
+1- Parameter ID: 18, Correlation score: 0.9718779180447575
+2- Parameter ID: 14, Correlation score: 0.9711020379054431
+3- Parameter ID: 11, Correlation score: 0.9684191141206595
+
+Product ID: 1 
+The top 3 correlated metrics are:
+1- Parameter ID: 18, Correlation score: 0.9718630381266443
+2- Parameter ID: 14, Correlation score: 0.9710940439441301
+3- Parameter ID: 11, Correlation score: 0.9684057907596445
+
+
+Extended Report:
+
+Product ID: 0
+- Average production per cycle: 19.962572720023704
+- Standard deviation of production per cycle: 7.260367143049466
+- Maximum production per cycle: 40.90424280034813
+- Total amount of production: 5729.258370646803
+- Production duration: 14:38:57
+- Production starting time: 16:16:14
+- Production ending time: 06:55:11
+- Average time of production per cycle: 01:23:20
+- longest duration of production per cycle: 01:28:35
+- Smallest duration of production per cycle: 01:18:30
+
+Product ID: 1
+- Average production per cycle: 19.979256767956898
+- Standard deviation of production per cycle: 7.316043086028879
+- Maximum production per cycle: 37.226320278965886
+- Total amount of production: 5741.211315767311
+- Production duration: 14:36:25
+- Production starting time: 16:16:17
+- Production ending time: 06:52:42
+- Average time of production per cycle: 01:23:19
+- longest duration of production per cycle: 01:29:59
+- Smallest duration of production per cycle: 01:16:12
+
+Correlation with all parameters:
+Product ID: 0 
+The top 20 correlated metrics are:
+1- Parameter ID: 18, Correlation score: 0.9718779180447575
+2- Parameter ID: 14, Correlation score: 0.9711020379054431
+3- Parameter ID: 11, Correlation score: 0.9684191141206595
+4- Parameter ID: 8, Correlation score: 0.9665351736836655
+5- Parameter ID: 13, Correlation score: 0.9652999549977198
+6- Parameter ID: 10, Correlation score: 0.9652964839676212
+7- Parameter ID: 15, Correlation score: 0.962130531010429
+8- Parameter ID: 19, Correlation score: 0.9594839946845893
+9- Parameter ID: 17, Correlation score: 0.9457398628684223
+10- Parameter ID: 2, Correlation score: 0.905407959193162
+11- Parameter ID: 0, Correlation score: 0.8929157550683413
+12- Parameter ID: 3, Correlation score: 0.7798514190001423
+13- Parameter ID: 1, Correlation score: 0.6779992404196686
+14- Parameter ID: 16, Correlation score: 0.10924936274857242
+15- Parameter ID: 4, Correlation score: 0.08611560977774484
+16- Parameter ID: 7, Correlation score: 0.07662714231347967
+17- Parameter ID: 6, Correlation score: 0.03535311483815161
+18- Parameter ID: 12, Correlation score: 0.013260823133264387
+19- Parameter ID: 5, Correlation score: 0.0038212190296707253
+20- Parameter ID: 9, Correlation score: 0.0009809303672521225
+
+Product ID: 1 
+The top 20 correlated metrics are:
+1- Parameter ID: 18, Correlation score: 0.9718630381266443
+2- Parameter ID: 14, Correlation score: 0.9710940439441301
+3- Parameter ID: 11, Correlation score: 0.9684057907596445
+4- Parameter ID: 8, Correlation score: 0.9665213927120807
+5- Parameter ID: 10, Correlation score: 0.9652901782644427
+6- Parameter ID: 13, Correlation score: 0.9652847737208515
+7- Parameter ID: 15, Correlation score: 0.9621249059808529
+8- Parameter ID: 19, Correlation score: 0.9594645787397991
+9- Parameter ID: 17, Correlation score: 0.9457099566868531
+10- Parameter ID: 2, Correlation score: 0.9054966145423399
+11- Parameter ID: 0, Correlation score: 0.8928247382773322
+12- Parameter ID: 3, Correlation score: 0.7794369750578701
+13- Parameter ID: 1, Correlation score: 0.6778934194734297
+14- Parameter ID: 16, Correlation score: 0.109505921765885
+15- Parameter ID: 4, Correlation score: 0.08604312156854362
+16- Parameter ID: 7, Correlation score: 0.07656069868493144
+17- Parameter ID: 6, Correlation score: 0.03544942999742169
+18- Parameter ID: 12, Correlation score: 0.013555514636056866
+19- Parameter ID: 5, Correlation score: 0.0038836571552304275
+20- Parameter ID: 9, Correlation score: 0.0013893642158635644
+
