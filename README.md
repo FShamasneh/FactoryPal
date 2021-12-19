@@ -1,3 +1,9 @@
+# System Overview
+Kafka has been used as an ingestion system. A producer was implemented to accept HTTP messages from various streams and write them to Kafka topic. A consumer was implemented to get the streams out of the topics and persist them into a time-series database (InfluxDB). An ETL pipeline was created using NiFi to perform the required transformations and processing on the data to finally generate static reports stored locally on the file system. The following diagram shows the architecture of the whole system.
+
+![alt text](https://github.com/FShamasneh/FactoryPal/blob/main/images/system.png)
+
+
 ## HTTPDataStreamer 
 
 An API was implemented to simulate different streams. It takes the stream as a JSON input file. The file should be stored under **“data”** directory. The API will generate dynamic routes based on the file name. The size of the returned response could be set via BATCH_SIZE variable in *.env* file in HTTPDataStreamer directory. The IP address of the host and the port number should be specified in the *.env* file. The following figure shows the GET response of the API for the two streams stored under the **“data”** directory. 
