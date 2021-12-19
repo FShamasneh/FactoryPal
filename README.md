@@ -1,6 +1,6 @@
 ## HTTPDataStreamer 
 
-An API was implemented to simulate different streams. It takes the stream as a JSON input file. The file should be stored under **“data”** directory. The API will generate dynamic routes based on the file name. The size of the returned response could be set via *BATCH_SIZE* variable in *.env* file in HTTPDataStreamer directory. The IP address of the host and the port number should be specified in the *.env* file. The following figure shows the GET response of the API for the two streams stored under the **“data”** directory. 
+An API was implemented to simulate different streams. It takes the stream as a JSON input file. The file should be stored under **“data”** directory. The API will generate dynamic routes based on the file name. The size of the returned response could be set via BATCH_SIZE variable in *.env* file in HTTPDataStreamer directory. The IP address of the host and the port number should be specified in the *.env* file. The following figure shows the GET response of the API for the two streams stored under the **“data”** directory. 
 
 ![alt text](https://github.com/FShamasneh/FactoryPal/blob/main/images/1.png)
 ![alt text](https://github.com/FShamasneh/FactoryPal/blob/main/images/2.png)

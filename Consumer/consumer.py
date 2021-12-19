@@ -46,46 +46,46 @@ class Consumer(object):
         '''
         initialize the different parameters and the connection to Kafka server.
         '''
-        # if 'KAFKA_BROKERS' in os.environ:
-        #     self.kafka_brokers = os.environ['KAFKA_BROKERS'].split(',')
-        # else:
-        #     raise ValueError('KAFKA_BROKERS environment variable not set')
-        #
-        # if 'STREAM_TYPE' in os.environ:
-        #     self.stream_type = os.environ['STREAM_TYPE']
-        # else:
-        #     raise ValueError('STREAM_TYPE environment variable not set')
-        #
-        # if 'KAFKA_TOPIC' in os.environ:
-        #     self.topic_name = os.environ['KAFKA_TOPIC']
-        # else:
-        #     raise ValueError('KAFKA_TOPIC environment variable not set')
-        #
-        # if 'DATABASE_NAME' in os.environ:
-        #     self.database_name = os.environ['DATABASE_NAME']
-        # else:
-        #     raise ValueError('DATABASE_NAME environment variable not set')
-        #
-        # if 'INFLUX_IP' in os.environ:
-        #     self.host_name = os.environ['INFLUX_IP']
-        # else:
-        #     raise ValueError('INFLUX_IP environment variable not set')
-        #
-        # if 'INFLUX_PORT' in os.environ:
-        #     self.port = int(os.environ['INFLUX_PORT'])
-        # else:
-        #     raise ValueError('INFLUX_PORT environment variable not set')
-        # if 'INFLUX_BATCH_SIZE' in os.environ:
-        #     self.influx_batch_size = int(os.environ['INFLUX_BATCH_SIZE'])
-        # else:
-        #     raise ValueError('INFLUX_BATCH_SIZE environment variable not set')
-        self.database_name = "firas_db"
-        self.host_name = '192.168.0.7'
-        self.port = 8086
-        self.kafka_brokers = "192.168.0.7:49154"
-        self.topic_name = 'new_topic_workorder'
-        self.stream_type = 'workorder'
-        self.influx_batch_size = 10
+        if 'KAFKA_BROKERS' in os.environ:
+            self.kafka_brokers = os.environ['KAFKA_BROKERS'].split(',')
+        else:
+            raise ValueError('KAFKA_BROKERS environment variable not set')
+
+        if 'STREAM_TYPE' in os.environ:
+            self.stream_type = os.environ['STREAM_TYPE']
+        else:
+            raise ValueError('STREAM_TYPE environment variable not set')
+
+        if 'KAFKA_TOPIC' in os.environ:
+            self.topic_name = os.environ['KAFKA_TOPIC']
+        else:
+            raise ValueError('KAFKA_TOPIC environment variable not set')
+
+        if 'DATABASE_NAME' in os.environ:
+            self.database_name = os.environ['DATABASE_NAME']
+        else:
+            raise ValueError('DATABASE_NAME environment variable not set')
+
+        if 'INFLUX_IP' in os.environ:
+            self.host_name = os.environ['INFLUX_IP']
+        else:
+            raise ValueError('INFLUX_IP environment variable not set')
+
+        if 'INFLUX_PORT' in os.environ:
+            self.port = int(os.environ['INFLUX_PORT'])
+        else:
+            raise ValueError('INFLUX_PORT environment variable not set')
+        if 'INFLUX_BATCH_SIZE' in os.environ:
+            self.influx_batch_size = int(os.environ['INFLUX_BATCH_SIZE'])
+        else:
+            raise ValueError('INFLUX_BATCH_SIZE environment variable not set')
+        # self.database_name = "firas_db"
+        # self.host_name = '192.168.0.7'
+        # self.port = 8086
+        # self.kafka_brokers = "192.168.0.7:49154"
+        # self.topic_name = 'new_topic_workorder'
+        # self.stream_type = 'workorder'
+        # self.influx_batch_size = 10
         logging_config = dict(
             version=1,
             formatters={
