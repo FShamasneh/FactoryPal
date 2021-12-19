@@ -21,32 +21,32 @@
 
 ### Consumer 
 - `cd YOUR PATH/FactoryPal/Consumer`
-- Modify the `.env`  to:
-	`KAFKA_BROKERS='YOUR_VM_IP_ADDRESS:KAFKA_PORT'
-	KAFKA_TOPIC_METRICS=topic_metrics_new
-	KAFKA_TOPIC_WORKORDER=topic_workorder_new
+- Modify the `.env`  to:<br />
+	KAFKA_BROKERS='YOUR_VM_IP_ADDRESS:KAFKA_PORT' 
+	KAFKA_TOPIC_METRICS=topic_metrics_new 
+	KAFKA_TOPIC_WORKORDER=topic_workorder_new 
 	STREAM_TYPE_WORKORDER='workorder'
 	STREAM_TYPE_METRICS='metrics'
 	DATABASE_NAME='firas_db'
 	INFLUX_IP='YOUR_VM_IP_ADDRESS'
 	INFLUX_PORT=8086
-	INFLUX_BATCH_SIZE=10`
+	INFLUX_BATCH_SIZE=10
 - `docker-compose up`
 
 ### Producer 
 - `cd YOUR PATH/FactoryPal/Producer`
 - Modify the `.env`  to:
-   `API_URL_WORKORDER='http://YOUR_VM_IP_ADDRESS:HTTP_APT_PORT/workorder'
+   API_URL_WORKORDER='http://YOUR_VM_IP_ADDRESS:HTTP_APT_PORT/workorder'
 	API_URL_METRICS='http://YOUR_VM_IP_ADDRESS:HTTP_APT_PORT/metrics'
 	KAFKA_BROKERS='YOUR_VM_IP_ADDRESS:KAFKA_PORT'
 	KAFKA_TOPIC_METRICS=topic_metrics_new
 	KAFKA_TOPIC_WORKORDER=topic_workorder_new
 	SLEEP=0.1
-	`
+	
 - `docker-compose up`
 
 
-### NiFi (The complicated part)
+### NiFi 
 The containerized version of NiFi is not stable without using an orchestrator, so we have to do the manual installation (The file size is around 1.5GB). Please follow the steps:
 1. wget https://dlcdn.apache.org/nifi/1.15.1/nifi-1.15.1-bin.tar.gz
 2. `sudo tar -xvzf nifi-1.15.1-bin.tar.gz`
@@ -62,6 +62,7 @@ The containerized version of NiFi is not stable without using an orchestrator, s
 12. The `GetGroupedProducts-InfluxDBQuery` && `GetGroupedMetrics-InfluxDBQuery` should be reconfigured to work with the new config of InfluxDB. (Please take a look at the figure bellow)
 ![alt text](https://github.com/FShamasneh/FactoryPal/blob/main/images/4.png)
 13. Modify the path in `ProcessStream-GenerateReport` processor to the new path of `analyzer.py` script. 
+![alt text](https://github.com/FShamasneh/FactoryPal/blob/main/images/8.png)
 14. Run NiFi and check the `docs` directory to see the generated report.
 
 
