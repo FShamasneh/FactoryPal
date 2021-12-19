@@ -1,8 +1,8 @@
 ## Prerequisite
-- A virtual machine that runs docker and docker compose. 
-- Install python (It will be used by one of the NiFi processors)
+- A virtual machine (VM) that runs docker and docker compose. 
+- Install Java on the VM (It will be used by NiFi)
+- Install python on the VM (It will be used by one of the NiFi processors)
 - Clone the Repository
-- Java running on the VM (For NiFi)
 
 ## Installations 
 
