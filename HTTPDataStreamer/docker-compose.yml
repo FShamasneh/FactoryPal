@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  http_streamer:
+    environment:
+      - HTTP_SERVER_IP
+      - HTTP_SERVER_PORT
+      - BATCH_SIZE
+    build: .
+    network_mode: "host"
