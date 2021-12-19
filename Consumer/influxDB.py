@@ -51,6 +51,8 @@ class Measurement:
         processed_values = values.decode()
         data_json = loads(processed_values)
         validator = Draft4Validator(schema)
+        if len(data_json) == 1:
+            data_json = [data_json]
         for msg in data_json:
             for error in validator.iter_errors(msg):
                 print(error, end='\n-----------------------\n')

@@ -1,10 +1,19 @@
 version: "3.3"
 services:
+  workorder:
+    environment:
+      - API_URL=${API_URL_WORKORDER}
+      - KAFKA_BROKERS
+      - KAFKA_TOPIC=${KAFKA_TOPIC_WORKORDER}
+      - SLEEP
+    build: .
+    network_mode: "host"
+
   metrics:
     environment:
-      - API_URL
+      - API_URL=${API_URL_METRICS}
       - KAFKA_BROKERS
-      - KAFKA_TOPIC
+      - KAFKA_TOPIC=${KAFKA_TOPIC_METRICS}
       - SLEEP
     build: .
     network_mode: "host"

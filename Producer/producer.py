@@ -59,7 +59,7 @@ class Producer(object):
             raise ValueError('KAFKA_TOPIC environment variable not set')
 
         if 'SLEEP' in os.environ:
-            self.sleep = int(os.environ['SLEEP'])
+            self.sleep = float(os.environ['SLEEP'])
         else:
             raise ValueError('SLEEP environment variable not set')
 

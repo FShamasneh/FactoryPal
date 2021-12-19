@@ -3,8 +3,19 @@ services:
   workorder:
     environment:
       - KAFKA_BROKERS
-      - KAFKA_TOPIC
-      - STREAM_TYPE
+      - KAFKA_TOPIC=${KAFKA_TOPIC_WORKORDER}
+      - STREAM_TYPE=${STREAM_TYPE_WORKORDER}
+      - DATABASE_NAME
+      - INFLUX_IP
+      - INFLUX_PORT
+      - INFLUX_BATCH_SIZE
+    build: .
+    network_mode: "host"
+  metrics:
+    environment:
+      - KAFKA_BROKERS
+      - KAFKA_TOPIC=${KAFKA_TOPIC_METRICS}
+      - STREAM_TYPE=${STREAM_TYPE_METRICS}
       - DATABASE_NAME
       - INFLUX_IP
       - INFLUX_PORT
