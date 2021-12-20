@@ -21,26 +21,26 @@
 
 ### Consumer 
 - `cd YOUR PATH/FactoryPal/Consumer`
-- Modify the `.env`  to:
-	KAFKA_BROKERS='YOUR_VM_IP_ADDRESS:KAFKA_PORT' 
-	KAFKA_TOPIC_METRICS=topic_metrics_new 
-	KAFKA_TOPIC_WORKORDER=topic_workorder_new 
-	STREAM_TYPE_WORKORDER='workorder'
-	STREAM_TYPE_METRICS='metrics'
-	DATABASE_NAME='firas_db'
-	INFLUX_IP='YOUR_VM_IP_ADDRESS'
-	INFLUX_PORT=8086
-	INFLUX_BATCH_SIZE=10
+- Modify the `.env`  to:<br />
+	KAFKA_BROKERS='YOUR_VM_IP_ADDRESS:KAFKA_PORT'<br /> 
+	KAFKA_TOPIC_METRICS=topic_metrics_new <br />
+	KAFKA_TOPIC_WORKORDER=topic_workorder_new <br />
+	STREAM_TYPE_WORKORDER='workorder'<br />
+	STREAM_TYPE_METRICS='metrics'<br />
+	DATABASE_NAME='firas_db'<br />
+	INFLUX_IP='YOUR_VM_IP_ADDRESS'<br />
+	INFLUX_PORT=8086<br />
+	INFLUX_BATCH_SIZE=10<br />
 - `docker-compose up`
 
 ### Producer 
 - `cd YOUR PATH/FactoryPal/Producer`
-- Modify the `.env`  to:
-   API_URL_WORKORDER='http://YOUR_VM_IP_ADDRESS:HTTP_APT_PORT/workorder'
-	API_URL_METRICS='http://YOUR_VM_IP_ADDRESS:HTTP_APT_PORT/metrics'
-	KAFKA_BROKERS='YOUR_VM_IP_ADDRESS:KAFKA_PORT'
-	KAFKA_TOPIC_METRICS=topic_metrics_new
-	KAFKA_TOPIC_WORKORDER=topic_workorder_new
+- Modify the `.env`  to:<br />
+   API_URL_WORKORDER='http://YOUR_VM_IP_ADDRESS:HTTP_APT_PORT/workorder'<br />
+	API_URL_METRICS='http://YOUR_VM_IP_ADDRESS:HTTP_APT_PORT/metrics'<br />
+	KAFKA_BROKERS='YOUR_VM_IP_ADDRESS:KAFKA_PORT'<br />
+	KAFKA_TOPIC_METRICS=topic_metrics_new<br />
+	KAFKA_TOPIC_WORKORDER=topic_workorder_new<br />
 	SLEEP=0.1
 	
 - `docker-compose up`
