@@ -21,7 +21,7 @@
 
 ### Consumer 
 - `cd YOUR PATH/FactoryPal/Consumer`
-- Modify the `.env`  to:<br />
+- Modify the `.env`  to:
 	KAFKA_BROKERS='YOUR_VM_IP_ADDRESS:KAFKA_PORT' 
 	KAFKA_TOPIC_METRICS=topic_metrics_new 
 	KAFKA_TOPIC_WORKORDER=topic_workorder_new 
@@ -64,5 +64,3 @@ The containerized version of NiFi is not stable without using an orchestrator, s
 13. Modify the path in `ProcessStream-GenerateReport` processor to the new path of `analyzer.py` script. 
 ![alt text](https://github.com/FShamasneh/FactoryPal/blob/main/images/8.png)
 14. Run NiFi and check the `docs` directory to see the generated report.
-
-

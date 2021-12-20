@@ -143,7 +143,7 @@ class Consumer(object):
     def run(self):
         '''
         Start consuming messages from Kafka topic and storing them in influxDB
-        :return:
+        :return: None
         '''
         self.init_db()
         try:

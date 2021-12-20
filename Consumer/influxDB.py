@@ -44,8 +44,8 @@ class Measurement:
     def validate_measurements(values, schema):
         '''
         validate the measurements before inserting into InfluxDB
-        :param values:
-        :param schema:
+        :param values: a list of measurements to be validated
+        :param schema: the schema to check the measurements against
         :return: data_json
         '''
         processed_values = values.decode()
